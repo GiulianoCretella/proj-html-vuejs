@@ -1,0 +1,184 @@
+{
+    "logoLeft":[
+        {
+            "image":"svg/svg-0.svg",
+            "nome":"home",
+            "active":"false",
+            "link":""
+        },
+        {
+            "nome":"pages",
+            "active":"false",
+            "link":""
+        },
+        {
+            "nome":"menu",
+            "active":"false",
+            "link":""
+        }
+    ],
+    "logoRight":[
+        {
+            "nome":"event",
+            "active":"false",
+            "link":""
+        },
+        {
+            "nome":"blog",
+            "active":"false",
+            "link":""
+        },
+        {
+            "nome":"landing",
+            "active":"false",
+            "link":""
+        }
+    ],
+    "headerEnd":[
+        {
+            "image":"svg/svg-1.svg",
+            "nome":"cart",
+            "active":"false",
+            "link":""
+        },
+        {
+            "nome":"search",
+            "active":"false",
+            "link":""
+        } 
+    ],
+    "pizzaSpecials":[
+        {
+            "nome":"combo piccolo",
+            "prezzo":"$10",
+            "text":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis accusantium exercitationem."
+        },
+        {
+            "nome":"combo mezzo",
+            "prezzo":"$20",
+            "text":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis accusantium exercitationem."
+        },
+        {
+            "nome":"combo grande",
+            "prezzo":"$30",
+            "text":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis accusantium exercitationem."
+        }
+    ],
+    "partnerRow":[
+        {
+            "nome":"cowboy",
+            "image":"img/h1-clients-img-4.png"
+        },
+        {
+            "nome":"gordon street food",
+            "image":"img/h1-clients-img-3.png"
+        },
+        {
+            "nome":"big cheese",
+            "image":"img/h1-clients-img-1.png"
+        },
+        {
+            "nome":"bludoos bar",
+            "image":"img/h1-clients-img-2.png"
+        },
+        {
+            "nome":"vegan",
+            "image":"img/h1-clients-img-5.png"
+        }
+        
+    ],
+    "pizzeSlider":[
+        {
+            "nome":"bismarck",
+            "prezzo": "$5.00 - $30.00",
+            "image":"h3-product-img-1a-100x100.png"
+        },
+        {
+            "nome":"fiori di zucca",
+            "prezzo": "$7.00 - $50.00",
+            "image":"h3-product-img-2a-100x100.png"
+        },
+        {
+            "nome":"valdostana",
+            "prezzo": "$55.00",
+            "image":"h3-product-img-3a-100x100.png"
+        },
+        {
+            "nome":"pizza tartufata",
+            "prezzo": "$45.00",
+            "image":"h3-product-img-4a-100x100.png"
+        },
+        {
+            "nome":"francescana",
+            "prezzo": "$25.00",
+            "image":"h3-product-img-5a-100x100.png"
+        },
+        {
+            "nome":"campagnola",
+            "prezzo": "$50.00 - $95.00 ",
+            "image":"h3-product-img-6a-100x100.png"
+        }
+    ],
+    "eventDate":[
+        {
+            "day":"02",
+            "month":"nov",
+            "event":"traditional neapolitan pies in kyoto pizza mercato",
+            "address":"204 E.Pizzetta Tommaso"
+        },
+        {
+            "day":"03",
+            "month":"nov",
+            "event":"Terarazza patio dining space opening this weekend",
+            "address":"204 E.Pizzetta Tommaso"
+        },
+        {
+            "day":"05",
+            "month":"nov",
+            "event":"sienna private dining room with stèphane brunn",
+            "address":"204 E.Pizzetta Tommaso"
+        }
+    ],
+    "restaurantAddress":[
+        {
+            "address":"1614 E.Bell Rd #104",
+            "city":"Salerno,AZ 85022",
+            "phoneNumber":"(602)867-1010"
+        },
+        {
+            "address":"204 E.Piazzetta Tommaso",
+            "city":"Sorrento,AZ 85022",
+            "phoneNumber":"(358)867-1010"
+        },
+        {
+            "address":"Viale Puglia 54",
+            "city":"Torre Del Greco,AZ 85022",
+            "phoneNumber":"(359)867-1010"
+        },
+        {
+            "address":"Corso Italia A",
+            "city":"Napoli,AZ 85022",
+            "phoneNumber":"(989)867-1010"
+        }
+    ],
+    "timeTables":[
+        {
+            "day":"monday",
+            "openingTime":"Kitchen Closed"
+        },
+        {
+            "day":"tuesday until friday",
+            "openingTime":"9.00 - 22.00"
+        },
+        {
+            "day":"msaturday",
+            "openingTime":"Saturday 11am to midnight"
+        },
+        {
+            "day":"Sunday",
+            "openingTime":"9.00 - 22.00"
+        }
+    ]
+
+
+}
