@@ -47,6 +47,20 @@
             "link":""
         } 
     ],
+    "cardSlider":[
+        {
+            "image":"img/h3-img-1.jpg"
+        },
+        {
+            "image":"img/h3-img-2.jpg"
+        },
+        {
+            "image":"img/h3-img-3.jpg"
+        },
+        {
+            "image":"img/h3-img-4.jpg"
+        }
+    ],
     "pizzaSpecials":[
         {
             "nome":"combo piccolo",
@@ -62,6 +76,28 @@
             "nome":"combo grande",
             "prezzo":"$30",
             "text":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis accusantium exercitationem."
+        }
+    ],
+    "peopleRow":[
+        {
+            "nome":"Jonathan Hopkins",
+            "task": "head waiter",
+            "image":"img/h1-team-1a-700x700.jpg"
+        },
+        {
+            "nome":"Brittany Moriarty",
+            "task": "waitress",
+            "image":"img/h1-team-2a.jpg"
+        },
+        {
+            "nome":"Eddy G. Lee",
+            "task": "kitchen porter",
+            "image":"img/h1-team-3a.jpg"
+        },
+        {
+            "nome":"Vera Hammett",
+            "task": "cashier",
+            "image":"img/h1-team-4a.jpg"
         }
     ],
     "partnerRow":[
