@@ -1,55 +1,78 @@
-{
-    "headerStart":[
+
+const headerStart=[
+    {
+        id:1,
+        "image":"svg/svg-0.svg",
+        "nome":"home",
+        "active":"false",
+        "link":""
+    },
+    {
+        id:2,
+
+        image:'',
+        "nome":"pages",
+        "active":"false",
+        "link":""
+    },
+    {
+        id:3,
+
+        image:'',
+        "nome":"menu",
+        "active":"false",
+        "link":""
+    },
+    {
+        id:4,
+
+        nome:'',
+        "image":"img/h5-logo-divided-header.png",
+        "link":"",
+        active:'false'
+    },
+    {
+        id:5,
+
+        image:'',
+        "nome":"event",
+        "active":"false",
+        "link":""
+    },
+    {
+        id:6,
+
+        image:'',
+        "nome":"blog",
+        "active":"false",
+        "link":""
+    },
+    {
+        id:7,
+
+        image:'',
+        "nome":"landing",
+        "active":"false",
+        "link":""
+    }
+];
+const headerEnd=[
         {
-            "image":"svg/svg-0.svg",
-            "nome":"home",
-            "active":"false",
-            "link":""
-        },
-        {
-            "nome":"pages",
-            "active":"false",
-            "link":""
-        },
-        {
-            "nome":"menu",
-            "active":"false",
-            "link":""
-        },
-        {
-            "image":"img/h5-logo-divided-header.png",
-            "link":""
-        },
-        {
-            "nome":"event",
-            "active":"false",
-            "link":""
-        },
-        {
-            "nome":"blog",
-            "active":"false",
-            "link":""
-        },
-        {
-            "nome":"landing",
-            "active":"false",
-            "link":""
-        }
-    ],
-    "headerEnd":[
-        {
+            id:1,
             "image":"svg/svg-1.svg",
             "nome":"cart",
             "active":"false",
             "link":""
         },
         {
+            id:2,
+            image:'',
             "nome":"search",
             "active":"false",
             "link":""
         } 
-    ],
-    "jumboSlider":[
+    ];
+    const jumboSlider=[
         {
             "background":"img/h3-rev-img-1.png",
             "image":"h3-rev-img-2.png",
@@ -65,8 +88,8 @@
             "image":"h3-rev-img-6.png",
             "active":"false"
         }
-    ],
-    "cardSlider":[
+    ];
+    const cardSlider=[
         {
             "image":"img/h3-img-1.jpg",
             "onHover":"svg/svg-5.svg"
@@ -83,8 +106,8 @@
             "image":"img/h3-img-4.jpg",
             "onHover":"svg/svg-5.svg"
         }
-    ],
-    "pizzaSpecials":[
+    ];
+    const pizzaSpecials=[
         {
             "nome":"combo piccolo",
             "prezzo":"$10",
@@ -100,8 +123,8 @@
             "prezzo":"$30",
             "text":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis accusantium exercitationem."
         }
-    ],
-    "peopleRow":[
+    ];
+    const peopleRow=[
         {
             "nome":"Jonathan Hopkins",
             "task": "head waiter",
@@ -122,8 +145,8 @@
             "task": "cashier",
             "image":"img/h1-team-3a.jpg"
         }
-    ],
-    "partnerRow":[
+    ];
+    const partnerRow=[
         {
             "nome":"cowboy",
             "image":"img/h1-clients-img-4.png"
@@ -145,8 +168,8 @@
             "image":"img/h1-clients-img-5.png"
         }
         
-    ],
-    "pizzeSlider":[
+    ];
+    const pizzeSlider =[
         {
             "nome":"bismarck",
             "prezzo": "$5.00 - $30.00",
@@ -177,8 +200,8 @@
             "prezzo": "$50.00 - $95.00 ",
             "image":"h3-product-img-6a-100x100.png"
         }
-    ],
-    "eventDate":[
+    ];
+    const eventDate =[
         {
             "day":"02",
             "month":"nov",
@@ -197,8 +220,8 @@
             "event":"sienna private dining room with stèphane brunn",
             "address":"204 E.Pizzetta Tommaso"
         }
-    ],
-    "restaurantAddress":[
+    ];
+    const restaurantAddress=[
         {
             "address":"1614 E.Bell Rd #104",
             "city":"Salerno,AZ 85022",
@@ -219,8 +242,8 @@
             "city":"Napoli,AZ 85022",
             "phoneNumber":"(989)867-1010"
         }
-    ],
-    "timeTables":[
+    ];
+    const timeTables=[
         {
             "day":"monday",
             "openingTime":"Kitchen Closed"
@@ -237,7 +260,6 @@
             "day":"Sunday",
             "openingTime":"9.00 - 22.00"
         }
-    ]
+    ];
 
-
-}
+    export {headerStart,headerEnd,jumboSlider,cardSlider,pizzaSpecials,peopleRow,partnerRow,pizzeSlider,restaurantAddress,eventDate,timeTables};

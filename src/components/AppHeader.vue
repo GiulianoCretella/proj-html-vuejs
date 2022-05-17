@@ -1,31 +1,30 @@
 <template>
 <section class="container">
-<div class="row align-items-center py-2">
-    <div class="col-2 debug align-items-center">
-        <div>ORDER ONLINE</div>
-    </div>
-    <div class="col-8 debug d-flex text-center align-items-center">
-        <div class="debug w-100" v-for="(item,index) in headerStart" :key="index">
+    <div class="row align-items-center">
+        <div class="col button tex-center">ONLINE ORDER</div>
+        <div class="col text-center" v-for="item in headerStart" :key="item.id">
             <img class="img-fluid" v-if="item.image" :src="require('../assets/' + item.image)" alt="">
-            {{item.nome}}</div>
+            {{item.nome}}
+        </div>
+        <div class="col text-end" v-for="item in headerEnd" :key="item.id">
+            <img class="img-fluid" v-if="item.image" :src="require('../assets/' + item.image)" alt="">
+            {{item.nome}}
+        </div>
     </div>
-    <div class="col-2 debug d-flex text-end">
-        <div class="w-100" v-for="item in headerEnd" :key="item">{{item.nome}}</div>
-    </div>
-</div>
+
 </section>
 </template>
 
 <script>
-import dati from '../dati.json'
+import {headerStart,headerEnd} from '../dati.js'
 export default {
     name:'AppHeader',
     components:{
     },
     data(){
         return{
-            headerStart: dati.headerStart,
-            headerEnd: dati.headerEnd
+            headerStart:headerStart,
+            headerEnd: headerEnd
         }
     },
 }
@@ -33,12 +32,14 @@ export default {
 
 <style lang="scss" scoped>
 @import '../style/vars.scss';
-div, button{
-    color: white;
+.col{
     text-transform: uppercase;
+    color: white;
+
 }
-.debug{
-    border: 1px solid white;
-    height: 30px;
+.button{
+    background-color: $main_red;
+    line-height: 2em;
 }
+
 </style>
