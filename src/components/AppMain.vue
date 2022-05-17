@@ -28,6 +28,7 @@
             </div>
         </div>
     </div>
+    <puzzle-bg/>
 </section>
 </template>
 
@@ -35,11 +36,13 @@
 import {phrases,pizzaSpecials} from '../dati.js'
 import MainCard from './MainCard.vue'
 import PhrasesSlider from './PhrasesSlider.vue'
+import PuzzleBg from './PuzzleBg.vue'
 export default {
     name:'AppMain',
     components:{
         MainCard,
         PhrasesSlider,
+        PuzzleBg,
     },
     data(){
         return{
