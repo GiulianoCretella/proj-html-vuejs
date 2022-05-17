@@ -1,5 +1,5 @@
 <template>
-  <div class="slider text-center position-absolute top-0 w-100">
+  <div class="slider text-center position-absolute top-50 w-100 translate-middle-y ">
       <div @click="slidePrev" class="prev">prev</div>
         <div @click="slideNext" class="next">next</div>
         <div v-for="(item,index) in items" :key="index">
@@ -42,7 +42,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '../style/vars.scss';
 .slider{
     padding: 150px;
