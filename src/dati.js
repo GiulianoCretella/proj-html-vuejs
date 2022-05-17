@@ -48,15 +48,15 @@ const headerStart=[
     const jumboSlider=[
         {
             "background":"img/h3-rev-img-1.png",
-            "image":"img/h3-rev-img-2.png",
+            "main":"img/h3-rev-img-2.png",
         },
         {
             "background":"img/h3-rev-img-3.png",
-            "image":"img/h3-rev-img-4.png",
+            "main":"img/h3-rev-img-4.png",
         },
         {
             "background":"img/h3-rev-img-5.png",
-            "image":"img/h3-rev-img-6.png",
+            "main":"img/h3-rev-img-6.png",
         }
     ];
     const cardSlider=[
@@ -116,6 +116,21 @@ const headerStart=[
             "image":"img/h1-team-3a.jpg"
         }
     ];
+    const phrases=[
+        {
+            main:'"Forget the trendy pizza shops, this hidden spot makes the best new york-style pizza slices in naples"',
+            sub:"washington post 2018"
+        },
+        {
+            main:'"surely you had never tasted a pizza like this, the best around!"',
+            sub:"the new tork times 2019"
+        },
+        {
+            main:'"Pizza shops, this hidden forget the trendy  spot makes the pizza slices in naples best new york-style "',
+            sub:"Usa Today 2020"
+        },
+
+    ]
     const partnerRow=[
         {
             "nome":"cowboy",
@@ -232,4 +247,4 @@ const headerStart=[
         }
     ];
 
-    export {headerStart,jumboSlider,cardSlider,pizzaSpecials,peopleRow,partnerRow,pizzeSlider,restaurantAddress,eventDate,timeTables};
+    export {headerStart,jumboSlider,cardSlider,phrases,pizzaSpecials,peopleRow,partnerRow,pizzeSlider,restaurantAddress,eventDate,timeTables};
