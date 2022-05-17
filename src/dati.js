@@ -49,17 +49,14 @@ const headerStart=[
         {
             "background":"img/h3-rev-img-1.png",
             "image":"img/h3-rev-img-2.png",
-            "active":false
         },
         {
             "background":"img/h3-rev-img-3.png",
             "image":"img/h3-rev-img-4.png",
-            "active":true
         },
         {
             "background":"img/h3-rev-img-5.png",
             "image":"img/h3-rev-img-6.png",
-            "active":false
         }
     ];
     const cardSlider=[
