@@ -1,5 +1,5 @@
 {
-    "logoLeft":[
+    "headerStart":[
         {
             "image":"svg/svg-0.svg",
             "nome":"home",
@@ -15,9 +15,11 @@
             "nome":"menu",
             "active":"false",
             "link":""
-        }
-    ],
-    "logoRight":[
+        },
+        {
+            "image":"img/h5-logo-divided-header.png",
+            "link":""
+        },
         {
             "nome":"event",
             "active":"false",
@@ -47,18 +49,39 @@
             "link":""
         } 
     ],
+    "jumboSlider":[
+        {
+            "background":"img/h3-rev-img-1.png",
+            "image":"h3-rev-img-2.png",
+            "active":"false"
+        },
+        {
+            "background":"img/h3-rev-img-3.png",
+            "image":"h3-rev-img-4.png",
+            "active":"false"
+        },
+        {
+            "background":"img/h3-rev-img-5.png",
+            "image":"h3-rev-img-6.png",
+            "active":"false"
+        }
+    ],
     "cardSlider":[
         {
-            "image":"img/h3-img-1.jpg"
+            "image":"img/h3-img-1.jpg",
+            "onHover":"svg/svg-5.svg"
         },
         {
-            "image":"img/h3-img-2.jpg"
+            "image":"img/h3-img-2.jpg",
+            "onHover":"svg/svg-5.svg"
         },
         {
-            "image":"img/h3-img-3.jpg"
+            "image":"img/h3-img-3.jpg",
+            "onHover":"svg/svg-5.svg"
         },
         {
-            "image":"img/h3-img-4.jpg"
+            "image":"img/h3-img-4.jpg",
+            "onHover":"svg/svg-5.svg"
         }
     ],
     "pizzaSpecials":[
@@ -92,12 +115,12 @@
         {
             "nome":"Eddy G. Lee",
             "task": "kitchen porter",
-            "image":"img/h1-team-3a.jpg"
+            "image":"img/h1-team-4a.jpg"
         },
         {
             "nome":"Vera Hammett",
             "task": "cashier",
-            "image":"img/h1-team-4a.jpg"
+            "image":"img/h1-team-3a.jpg"
         }
     ],
     "partnerRow":[
