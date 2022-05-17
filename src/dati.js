@@ -1,92 +1,65 @@
 
 const headerStart=[
     {
-        id:1,
-        "image":"svg/svg-0.svg",
         "nome":"home",
         "active":"false",
         "link":""
     },
     {
-        id:2,
-
-        image:'',
         "nome":"pages",
         "active":"false",
         "link":""
     },
     {
-        id:3,
-
-        image:'',
         "nome":"menu",
         "active":"false",
         "link":""
     },
     {
-        id:4,
-
-        nome:'',
         "image":"img/h5-logo-divided-header.png",
         "link":"",
-        active:'false'
     },
     {
-        id:5,
-
-        image:'',
         "nome":"event",
         "active":"false",
         "link":""
     },
     {
-        id:6,
-
-        image:'',
         "nome":"blog",
         "active":"false",
         "link":""
     },
     {
-        id:7,
-
-        image:'',
         "nome":"landing",
         "active":"false",
         "link":""
-    }
+    },
+    {
+        "nome":"cart",
+        "active":"false",
+        "link":""
+    },
+    {
+        "nome":"search",
+        "active":"false",
+        "link":""
+    } 
 ];
-const headerEnd=[
-        {
-            id:1,
-            "image":"svg/svg-1.svg",
-            "nome":"cart",
-            "active":"false",
-            "link":""
-        },
-        {
-            id:2,
-            image:'',
-            "nome":"search",
-            "active":"false",
-            "link":""
-        } 
-    ];
     const jumboSlider=[
         {
             "background":"img/h3-rev-img-1.png",
-            "image":"h3-rev-img-2.png",
-            "active":"false"
+            "image":"img/h3-rev-img-2.png",
+            "active":false
         },
         {
             "background":"img/h3-rev-img-3.png",
-            "image":"h3-rev-img-4.png",
-            "active":"false"
+            "image":"img/h3-rev-img-4.png",
+            "active":true
         },
         {
             "background":"img/h3-rev-img-5.png",
-            "image":"h3-rev-img-6.png",
-            "active":"false"
+            "image":"img/h3-rev-img-6.png",
+            "active":false
         }
     ];
     const cardSlider=[
@@ -253,7 +226,7 @@ const headerEnd=[
             "openingTime":"9.00 - 22.00"
         },
         {
-            "day":"msaturday",
+            "day":"saturday",
             "openingTime":"Saturday 11am to midnight"
         },
         {
@@ -262,4 +235,4 @@ const headerEnd=[
         }
     ];
 
-    export {headerStart,headerEnd,jumboSlider,cardSlider,pizzaSpecials,peopleRow,partnerRow,pizzeSlider,restaurantAddress,eventDate,timeTables};
+    export {headerStart,jumboSlider,cardSlider,pizzaSpecials,peopleRow,partnerRow,pizzeSlider,restaurantAddress,eventDate,timeTables};
