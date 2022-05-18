@@ -51,6 +51,7 @@ export default {
     .deals{
         padding: 10px;
         border-bottom: 1px dotted $main_gold ;
+        margin: 20px 0;
         .nome{
             color: white;
         }
@@ -59,7 +60,6 @@ export default {
             color: $main_red;
             margin-right: 3px;
             font-weight: 600;
-            margin-bottom: 0;
         }
         .mese{
             margin-top: 0;

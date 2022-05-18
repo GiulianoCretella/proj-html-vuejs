@@ -22,6 +22,7 @@
          <image-slider :images="pizzeSlider" type="description"/>
      </div>
      <deals-component :deals="eventDate"/>
+     <book-select/>
     
 </section>
 </template>
@@ -33,6 +34,7 @@ import PhrasesSlider from './PhrasesSlider.vue'
 import PizzaSpecial from './PizzaSpecial.vue'
 import ImageSlider from './ImageSlider.vue'
 import DealsComponent from './DealsComponent.vue'
+import BookSelect from './BookSelect.vue'
 export default {
     name:'AppMain',
     components:{
@@ -40,7 +42,8 @@ export default {
         PhrasesSlider,
         PizzaSpecial,
         ImageSlider,
-        DealsComponent
+        DealsComponent,
+        BookSelect
     },
     data(){
         return{
