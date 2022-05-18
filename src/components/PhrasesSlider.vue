@@ -1,9 +1,9 @@
 <template>
-<div>
-    <div class="slider text-center position-absolute top-50 w-100 translate-middle-y ">
+<div class="testimonials">
+    <div class="slider position-relative w-100 d-flex justify-content-center align-items-center">
         <div @click="slidePrev" class="prev">prev</div>
         <div @click="slideNext" class="next">next</div>
-        <div class="phrase" v-for="(item,index) in items" :key="index">
+        <div class="phrase position-relative text-center" v-for="(item,index) in items" :key="index">
             <div v-if="index===indexActive">
                 <span>{{item.main.toUpperCase()}}</span>
                 <p>{{item.sub.toUpperCase()}}</p>
@@ -22,7 +22,7 @@ export default {
     },
     data(){
         return{
-            indexActive:0
+            indexActive:0,
         }
     },
     methods:{
@@ -47,9 +47,12 @@ export default {
 
 <style lang="scss" scoped>
 @import '../style/vars.scss';
-.phrase{
-    width: 70%;
-    margin :0 auto;
+.testimonials{
+    background-image: url(../assets/img/h3-testimonials-bckgrnd.jpg);
+    background-size: contain;
+}
+.slider{
+    height: 400px;
 }
  .prev, .next {
     text-align: center;
@@ -79,9 +82,6 @@ export default {
     transform: rotate(90deg);
 
 }
-.active{
-    display: block;
-}
 span{
     font-size: 1.2em;
     font-weight: 500;
@@ -91,5 +91,7 @@ p{
     font-size: 0.7em;
     color: $main_red;
 }
+
+
 
 </style>

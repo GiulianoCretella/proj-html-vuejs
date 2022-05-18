@@ -1,10 +1,7 @@
 <template>
 <section>
     <main-card :cards="cardSlider" type="svg"/>
-    <div class="testimonials position-relative">
-        <img class="img-fluid" src="../assets/img/h3-testimonials-bckgrnd.jpg" alt="">
-        <phrases-slider :items="phrases"/>
-    </div>
+    <phrases-slider :items="phrases"/>
     <pizza-special :menu="pizzaSpecials"/>
     <div class="own-pizza">
         <div class="own-text">

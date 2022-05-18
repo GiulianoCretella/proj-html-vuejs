@@ -3,10 +3,13 @@
     <div @click="slidePrev" class="prev">prev</div>
     <div @click="slideNext" class="next">next</div>
     <div class="position-relative text-center" v-for="(item,index) in cards" :key="index">
-        <img class="w-75" v-if="indexActive === index" :src="require('../assets/' + item.background)" alt="">
-        <div class="position-absolute top-50 start-50 translate-middle">
+        <img class="w-75"  v-if="indexActive === index" :src="require('../assets/' + item.background)" alt="">
+         <div class="position-absolute top-50 start-50 translate-middle">
+        <Transition name="pizza-bounce">
             <img class="w-75" v-if="indexActive === index" :src="require('../assets/' + item.main)"  alt="">
+        </Transition>
         </div>
+        
     </div>
 </div>
 
@@ -20,7 +23,8 @@ export default {
     },
     data(){
         return{
-            indexActive:0
+            indexActive:0,
+            show:true
         }
     },
     methods:{
@@ -45,6 +49,28 @@ export default {
 
 <style lang="scss" scoped>
 @import '../style/vars.scss';
+
+.pizza-bounce-enter-to{
+    transform: scale(1);
+}
+
+.pizza-bounce-enter-active {
+  animation: bounce-in 0.7s;
+}
+.pizza-bounce-active {
+  animation: bounce-in 0.2s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .jumbo{
     height: 400px;
     .prev, .next {
