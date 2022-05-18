@@ -1,14 +1,17 @@
 <template>
-  <div class="slider text-center position-absolute top-50 w-100 translate-middle-y ">
-      <div @click="slidePrev" class="prev">prev</div>
+<div>
+    <div class="slider text-center position-absolute top-50 w-100 translate-middle-y ">
+        <div @click="slidePrev" class="prev">prev</div>
         <div @click="slideNext" class="next">next</div>
-        <div v-for="(item,index) in items" :key="index">
+        <div class="phrase" v-for="(item,index) in items" :key="index">
             <div v-if="index===indexActive">
-                <span class="w-75">{{item.main.toUpperCase()}}</span>
+                <span>{{item.main.toUpperCase()}}</span>
                 <p>{{item.sub.toUpperCase()}}</p>
             </div>
         </div>
-  </div>
+    </div>
+</div>
+  
 </template>
 
 <script>
@@ -44,12 +47,14 @@ export default {
 
 <style lang="scss" scoped>
 @import '../style/vars.scss';
-.slider{
-    padding: 150px;
+.phrase{
+    width: 70%;
+    margin :0 auto;
 }
  .prev, .next {
-    width: 50px;
-    height: 50px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
     margin: 10px 0;
     border-radius: 50%;
     background: white;
@@ -58,19 +63,19 @@ export default {
     z-index: 999;
     line-height: 25px;
     text-transform: uppercase;
-    padding: 1px;
-    font-size: 0.8em;
+    padding: 10px;
+    font-size: 1em;
     letter-spacing: 1.5px;
     color:$main_red;
 
 }
 .next{
     transform: rotate(270deg);
-    right: -25px;
+    right: -60px;
     overflow: hidden;
 }
 .prev{
-    left: -25px;
+    left: -60px;
     transform: rotate(90deg);
 
 }

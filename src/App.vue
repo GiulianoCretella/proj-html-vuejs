@@ -37,6 +37,7 @@ export default {
 #app{
   font-family: 'Oswald', sans-serif;
   letter-spacing: 2px;
+  overflow: hidden;
   header{
     background-image: url(./assets/img/bj_jumbo.jpg);
     background-size:100%;
