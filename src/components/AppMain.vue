@@ -21,23 +21,26 @@
          </div>
          <image-slider :images="pizzeSlider" type="description"/>
      </div>
+     <deals-component :deals="eventDate"/>
     
 </section>
 </template>
 
 <script>
-import {phrases,cardSlider,pizzaSpecials,peopleRow,partnerRow,pizzeSlider} from '../dati.js'
+import {phrases,cardSlider,pizzaSpecials,peopleRow,partnerRow,pizzeSlider,eventDate} from '../dati.js'
 import MainCard from './MainCard.vue'
 import PhrasesSlider from './PhrasesSlider.vue'
 import PizzaSpecial from './PizzaSpecial.vue'
 import ImageSlider from './ImageSlider.vue'
+import DealsComponent from './DealsComponent.vue'
 export default {
     name:'AppMain',
     components:{
         MainCard,
         PhrasesSlider,
         PizzaSpecial,
-        ImageSlider
+        ImageSlider,
+        DealsComponent
     },
     data(){
         return{
@@ -47,6 +50,7 @@ export default {
             peopleRow:peopleRow,
             partnerRow:partnerRow,
             pizzeSlider:pizzeSlider,
+            eventDate:eventDate,
         }
     }
 }
