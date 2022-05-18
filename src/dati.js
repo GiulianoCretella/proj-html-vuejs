@@ -1,39 +1,48 @@
 
 const headerStart=[
     {
+        "image":'svg/svg-0.svg',
         "nome":"home",
-        "active":"false",
+        "active":false,
         "link":""
     },
     {
+        "image":'svg/svg-0.svg',
         "nome":"pages",
-        "active":"false",
+        "active":false,
         "link":""
     },
     {
+        "image":'svg/svg-0.svg',
         "nome":"menu",
-        "active":"false",
+        "active":false,
         "link":""
     },
     {
         "image":"img/h5-logo-divided-header.png",
         "link":"",
+        "active":true,
     },
     {
+        "image":'svg/svg-0.svg',
         "nome":"event",
-        "active":"false",
+        "active":false,
         "link":""
     },
     {
+        "image":'svg/svg-0.svg',
         "nome":"blog",
-        "active":"false",
+        "active":false,
         "link":""
     },
     {
+        "image":'svg/svg-0.svg',
         "nome":"landing",
-        "active":"false",
+        "active":false,
         "link":""
     },
+];
+const cartAndSearch=[
     {
         "nome":"cart",
         "active":"false",
@@ -247,4 +256,4 @@ const headerStart=[
         }
     ];
 
-    export {headerStart,jumboSlider,cardSlider,phrases,pizzaSpecials,peopleRow,partnerRow,pizzeSlider,restaurantAddress,eventDate,timeTables};
+    export {headerStart,cartAndSearch,jumboSlider,cardSlider,phrases,pizzaSpecials,peopleRow,partnerRow,pizzeSlider,restaurantAddress,eventDate,timeTables};

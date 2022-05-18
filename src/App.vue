@@ -20,9 +20,9 @@ import AppMain from './components/AppMain.vue'
 export default {
   name: 'App',
   components: {
-    AppHeader,
     AppMain,
     AppFooter,
+    AppHeader,
   
   },
   data(){
@@ -38,11 +38,10 @@ export default {
 #app{
   font-family: 'Oswald', sans-serif;
   letter-spacing: 2px;
-  overflow: hidden;
+  overflow-x: hidden;
   header{
     background-image: url(./assets/img/bj_jumbo.jpg);
     background-size:100%;
-    height: 500px
   }
 }
 </style>
