@@ -158,32 +158,32 @@ const headerStart=[
         {
             "nome":"bismarck",
             "prezzo": "$5.00 - $30.00",
-            "image":"h3-product-img-1a-100x100.png"
+            "image":"img/h3-product-img-1a-100x100.png"
         },
         {
             "nome":"fiori di zucca",
             "prezzo": "$7.00 - $50.00",
-            "image":"h3-product-img-2a-100x100.png"
+            "image":"img/h3-product-img-2a-150x150.png"
         },
         {
             "nome":"valdostana",
             "prezzo": "$55.00",
-            "image":"h3-product-img-3a-100x100.png"
+            "image":"img/h3-product-img-3a-150x150.png"
         },
         {
             "nome":"pizza tartufata",
             "prezzo": "$45.00",
-            "image":"h3-product-img-4a-100x100.png"
+            "image":"img/h3-product-img-4a-150x150.png"
         },
         {
             "nome":"francescana",
             "prezzo": "$25.00",
-            "image":"h3-product-img-5a-100x100.png"
+            "image":"img/h3-product-img-5a-150x150.png"
         },
         {
             "nome":"campagnola",
             "prezzo": "$50.00 - $95.00 ",
-            "image":"h3-product-img-6a-100x100.png"
+            "image":"img/h3-product-img-6a-100x100.png"
         }
     ];
     const eventDate =[
