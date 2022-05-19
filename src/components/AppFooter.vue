@@ -28,4 +28,9 @@ export default {
 .list-side{
     background-image: url(../assets/img/bj_jumbo.jpg);
 }
+@media screen and (max-width:995px) {
+    .img_container{
+        display: none;
+    }
+}
 </style>

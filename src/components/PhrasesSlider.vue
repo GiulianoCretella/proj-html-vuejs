@@ -1,6 +1,8 @@
 <template>
 <div class="testimonials">
-    <div class="slider position-relative w-100 d-flex justify-content-center align-items-center">
+    <div class="slider position-relative w-100 d-flex justify-content-center align-items-center"
+        @mouseover="stopScroll"
+        @mouseleave="scroll">
         <div @click="slidePrev" class="prev">prev</div>
         <div @click="slideNext" class="next">next</div>
         <div class="phrase position-relative text-center" v-for="(item,index) in items" :key="index">
@@ -23,24 +25,37 @@ export default {
     data(){
         return{
             indexActive:0,
+            intervallo:null
         }
     },
     methods:{
     
-    slidePrev(){
-        if(this.indexActive === 0){
-            this.indexActive = this.items.length -1;
-        }else{
-            this.indexActive -= 1
-        }
+        slidePrev(){
+            if(this.indexActive === 0){
+                this.indexActive = this.items.length -1;
+            }else{
+                this.indexActive -= 1
+            }
+        },
+        slideNext(){
+            if(this.indexActive === this.items.length -1){
+                this.indexActive = 0;
+            }else{
+                this.indexActive += 1
+            }
+        },
+        scroll(){
+                this.intervallo= setInterval(() => {
+                    this.slideNext()
+                },1000)
+            },
+        stopScroll(){
+                clearInterval(this.intervallo);
+                this.intervallo = null;
+        },
     },
-    slideNext(){
-        if(this.indexActive === this.items.length -1){
-            this.indexActive = 0;
-        }else{
-            this.indexActive += 1
-        }
-    },
+    mounted(){
+       this.scroll();
     }
 }
 </script>

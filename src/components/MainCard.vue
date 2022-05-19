@@ -1,7 +1,9 @@
 <template>
   <section class="d-flex">
       <div v-for="(item,index) in cards" :key="index" class="my_card position-relative w-25">
-          <img class="w-100 h-100" :src="require('../assets/' + item.image)" alt="">
+          <div class="image_container">
+             <img class="w-100 h-100" :src="require('../assets/' + item.image)" alt="">
+          </div>
           <div class="onhover">
                <div class="description" v-if="type==='image'">
                    <div class="description-text text-center">
@@ -38,8 +40,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../style/vars.scss';
-
-.onhover{
+    .onhover{
     width: 100%;
     height: 100%;
     top: 0;
@@ -95,9 +96,18 @@ export default {
         }
     }
 }
-.my_card:hover .onhover{
+.my_card{
+    &:hover .image_container{
+        display: none;
+        
+    }
+    &:hover .onhover{
     display: block;
 }
+}
+
+
+
 
 
 </style>

@@ -32,8 +32,8 @@ export default {
         left: 50%;
         transform: translate(-50%, -50%);
         select, input, button{
-            padding: 20px 50px;
-            margin: 20px;
+            padding: 10px 50px;
+            margin: 10px;
             font-size: 0.8em;
         }
         button{
